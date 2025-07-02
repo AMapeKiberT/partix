@@ -1,0 +1,19 @@
+[package]
+name = "partix"
+version = "0.1.0"
+edition = "2024"
+license = "AGPL-3.0"
+authors = ["titago"]
+description = "Modern fdisk alternative."
+
+[dependencies]
+clap = { version = "4.5.40", features = ["derive"] }
+gptman = "2.0.1"
+rustyline = "16.0.0"
+anyhow = "1.0.98 "
+
+ratatui = "0.28.0"
+
+[[bin]]
+name = "partix"
+path = "src/main.rs"
